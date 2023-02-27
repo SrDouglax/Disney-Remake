@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Avenir Roman";
+  src: url("fonte-paga.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("fundo.jpg") no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 80px ;
+  font-family: "Avenir Roman";
+}
+
+.logo {
+  max-width: 160px;
+}
+
+h1 {
+  color: #f9f9f9;
+  margin-bottom: 30px;
+}
+
+.precos-div {
+  display: flex;
+  width: 500px;
+}
+
+.preco {
+  width: 300px;
+  max-width: 100%;
+  color: rgba(192, 192, 192, 0.8);
+}
+
+.preco:first-child {
+  display: grid;
+}
+
+.preco:first-child a {
+  align-self: flex-end;
+}
+
+.preco span {
+  color: #f9f9f9;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.preco p {
+  font-size: 14px; 
+  margin-bottom: 22px;
+  padding: 0px;
+}
+
+.preco a {
+  padding: 16.5px 14px;
+  background-color: #0063E5;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #f9f9f9;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+}
+
+.preco a:hover {
+  background-color: #0483EE
+}
+
+.preco + .preco {
+  margin-left: 32px;
+}
+
+p {
+  padding-top: 10px;
+  font-size: 9.7px;
+  line-height: 18px;
+  color: rgba(192, 192, 192, 0.8);
+}
+
+.logos {
+  position: absolute;
+  width: 500px;
+  bottom: 25px;
+}
